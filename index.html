@@ -1,74 +1,92 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Status Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skillforge Cheat Status</title>
   <style>
     body {
-      background-color: #0e0e15;
-      color: white;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0e1117;
+      color: #ffffff;
     }
+
     header {
-      background-color: #13131a;
-      padding: 1rem;
       display: flex;
       align-items: center;
-      justify-content: center;
-      position: relative;
+      padding: 20px;
+      background-color: #0e1117;
     }
+
     header img {
-      position: absolute;
-      left: 20px;
       height: 50px;
     }
-    h1 {
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      margin-top: -60px;
+    }
+
+    .status-container {
+      background-color: #1a1d24;
+      padding: 30px;
+      border-radius: 10px;
+      width: 400px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .status-container h1 {
       text-align: center;
-      margin-bottom: 0.5rem;
+      margin-bottom: 20px;
+      color: #3399ff;
     }
-    .status-box {
-      max-width: 800px;
-      margin: 1rem auto;
-      background: #1a1a24;
-      border-radius: 8px;
-      padding: 1rem;
-    }
+
     .status-item {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      border-bottom: 1px solid #333;
-      padding: 0.5rem 0;
+      padding: 8px 0;
+      border-bottom: 1px solid #2c2f36;
     }
+
     .status-item:last-child {
       border-bottom: none;
     }
-    .green {
-      color: #00ff99;
+
+    .status-green {
+      color: #00ffcc;
+    }
+
+    .status-blue {
+      color: #3399ff;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="/mnt/data/ChatGPT Image 20. Apr. 2025, 08_18_18.png" alt="Logo" />
-    <h1>Skillforge Cheat Status</h1>
+    <img src="logo.png" alt="Skillforge Logo" />
   </header>
+  <main>
+    <div class="status-container">
+      <h1>Skillforge Cheat Status</h1>
 
-  <div class="status-box">
-    <div class="status-item"><span>R6 Ring-1</span><span class="green">🟢 Undetected</span></div>
-    <div class="status-item"><span>Valorant Onyx Lite</span><span class="green">🟢 Undetected</span></div>
-    <div class="status-item"><span>Fortnite Fecurity</span><span class="green">🟢 Undetected</span></div>
-    <div class="status-item"><span>Bo6/Mw3/Mw2/Wz6 - Fecurity</span><span class="green">🟢 Undetected</span></div>
-    <div class="status-item"><span>CS2 MemeSense</span><span class="green">🟢 Undetected</span></div>
-    <div class="status-item"><span>Apex Legends Fecurity</span><span class="green">🟢 Undetected</span></div>
-    <div class="status-item"><span>RDR2 Ovix Menu</span><span class="green">🟢 Undetected</span></div>
-    <div class="status-item"><span>EFT Ring-1</span><span class="green">🟢 Undetected</span></div>
-    <div class="status-item"><span>EFT Fecurity</span><span class="green">🟢 Undetected</span></div>
-    <div class="status-item"><span>Rust Ring-1</span><span class="blue">🔵Updating</span></div>
-    <div class="status-item"><span>Overwatch Ring-1</span><span class="green">🟢 Undetected</span></div>
-  </div>
+      <div class="status-item"><span>R6 Ring-1</span><span class="status-green">Undetected</span></div>
+      <div class="status-item"><span>Valorant Onyx Lite</span><span class="status-green">Undetected</span></div>
+      <div class="status-item"><span>Fortnite Fecurity</span><span class="status-green">Undetected</span></div>
+      <div class="status-item"><span>Bo6/Mw3/Mw2/Wz6 - Fecurity</span><span class="status-green">Undetected</span></div>
+      <div class="status-item"><span>CS2 MemeSense</span><span class="status-green">Undetected</span></div>
+      <div class="status-item"><span>Apex Legends Fecurity</span><span class="status-green">Undetected</span></div>
+      <div class="status-item"><span>RDR2 Ovix Menu</span><span class="status-green">Undetected</span></div>
+      <div class="status-item"><span>EFT Ring-1</span><span class="status-green">Undetected</span></div>
+      <div class="status-item"><span>EFT Fecurity</span><span class="status-green">Undetected</span></div>
+      <div class="status-item"><span>Rust Ring-1</span><span class="status-blue">Updating</span></div>
+      <div class="status-item"><span>Overwatch Ring-1</span><span class="status-green">Undetected</span></div>
+
+    </div>
+  </main>
 </body>
 </html>
